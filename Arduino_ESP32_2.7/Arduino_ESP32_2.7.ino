@@ -61,6 +61,7 @@ void loop() {
     EPD_HW_Init(); //Electronic paper initialization
     EPD_WhiteScreen_White();
     EPD_WhiteScreen_ALL(gImage_0); //Refresh the picture in full screen need 2.72s
+    EPD_DeepSleep();
     delay(2000);
     //Clear
     EPD_HW_Init(); //EPD init
